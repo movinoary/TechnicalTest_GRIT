@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Req API</title>
+  </head>
+  <body>
+    <h1>Cek console</h1>
+  </body>
+  <script>
+    const reqAPI = async () => {
+      const response = await fetch("http://jsonplaceholder.typicode.com/posts");
+      let data = await response.json();
+      console.log(data);
+    };
+
+    reqAPI();
+  </script>
+</html>

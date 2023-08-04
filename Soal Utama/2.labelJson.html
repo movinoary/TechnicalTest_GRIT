@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabel</title>
+  </head>
+  <body>
+    <div id="data"></div>
+    <button onClick="onChange()">Change</button>
+  </body>
+  <script>
+    let condition = localStorage.getItem("condition");
+    condition = JSON.parse(condition);
+    condition = condition || false;
+
+    const onChange = () => {
+      condition = !condition;
+      localStorage.setItem("condition", condition);
+      window.location.reload("Refresh");
+    };
+
+    const renderData = async () => {
+      const response = await fetch("./1.data.json");
+      let data = await response.json();
+      let num = condition == false ? 0 : 1;
+
+      console.log(data);
+
+      let render = document.getElementById("data");
+      let content = `<label>${data[num].name} || ${data[num].lable}</label>`;
+
+      render.innerHTML += `${content}`;
+    };
+
+    renderData();
+  </script>
+</html>

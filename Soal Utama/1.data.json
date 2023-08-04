@@ -1,0 +1,297 @@
+[
+  {
+    "id": "10ADJ01",
+    "name": "ITZY",
+    "country": "South Korean",
+    "lable": "JYP",
+    "fandom": "MIDZY",
+    "debut": {
+      "year": "2019",
+      "date": "27 Februari",
+      "song": "Dalla Dalla"
+    },
+    "member": [
+      {
+        "image": "https://i.pinimg.com/564x/42/bb/96/42bb9673de652401b286cbc3006d698c.jpg",
+        "nama": "Hwang Ye-JI",
+        "username": "yeji",
+        "email": "yeji@itzy.com",
+        "kelahiran": "26 Mei 2000",
+        "warganegara": "Korea",
+        "role": "Lead Vocalist"
+      },
+      {
+        "image": "https://i.pinimg.com/564x/e3/c8/04/e3c804dd6f53226deb72baa47f210578.jpg",
+        "nama": "Choi Ji-Su",
+        "username": "lia",
+        "email": "lia@itzy.com",
+        "kelahiran": "21 Juli 2000",
+        "warganegara": "Korea",
+        "role": "Main Vocalist"
+      },
+      {
+        "image": "https://i.pinimg.com/564x/70/20/93/70209314f8406a6f69a8a61828069c3e.jpg",
+        "nama": "Shin Ryu-JIn",
+        "username": "ryujin",
+        "email": "ryujin@itzy.com",
+        "kelahiran": "17 April 2001",
+        "warganegara": "Korea",
+        "role": "Main Rapper"
+      },
+      {
+        "image": "https://i.pinimg.com/564x/e6/33/5c/e6335c1b046f75251348d4808f1b025b.jpg",
+        "nama": "Lee Chae-Ryeong",
+        "username": "chaeryeong",
+        "email": "chaeryeong@itzy.com",
+        "kelahiran": "5 Juli 2001",
+        "warganegara": "Korea",
+        "role": "Main Dancer"
+      },
+      {
+        "image": "https://i.pinimg.com/564x/fc/f9/c9/fcf9c99f919e6db46cf1c8584bb23864.jpg",
+        "nama": "Shin Yu-Ma",
+        "username": "Yuna",
+        "email": "yuna@itzy.com",
+        "kelahiran": "9 Desember 2003",
+        "warganegara": "Korea",
+        "role": "Lead Rapper"
+      }
+    ],
+    "album": [
+      {
+        "title": "Crazy in Love",
+        "release": "2021",
+        "song": ["LOCO", "Love is", "Gas Me Up", "SWIPE"]
+      },
+      {
+        "title": "Checkmate",
+        "release": "2022",
+        "song": ["SNEAKERS", "DOMINO", "Free Fell", "RAC3R"]
+      },
+      {
+        "title": "Kill My Doubt",
+        "release": "2023",
+        "song": ["BET ON ME", "CAKE", "None of My Business", "Kill Shot"]
+      }
+    ]
+  },
+  {
+    "id": "10ADJ02",
+    "name": "AESPA",
+    "country": "South Korean",
+    "lable": "SM Entertainment",
+    "fandom": "MIDZY",
+    "debut": {
+      "year": "2020",
+      "date": "17 November",
+      "song": "Black Mamba"
+    },
+    "member": [
+      {
+        "image": "https://i.pinimg.com/564x/27/0c/2c/270c2c6b6b650f2adb30b9af9e4e62e7.jpg",
+        "nama": "Yu Jimin",
+        "username": "Karina",
+        "email": "karina@aespa.com",
+        "kelahiran": "11 April 2000",
+        "warganegara": "Korea",
+        "role": "Main Dancer"
+      },
+      {
+        "image": "https://i.pinimg.com/564x/d0/d0/24/d0d024ae44230be44d58c0555c9734d2.jpg",
+        "nama": "Aeri Uchinaga",
+        "username": "Giselle",
+        "email": "giselle@aespa.com",
+        "kelahiran": "30 Oktober 2000",
+        "warganegara": "Korea",
+        "role": "Main Rapper"
+      },
+      {
+        "image": "https://i.pinimg.com/564x/ed/ba/60/edba60ba1793fb44942da68e07a1f9ba.jpg",
+        "nama": "Kim Min-jeong",
+        "username": "Winter",
+        "email": "winter@aespa.com",
+        "kelahiran": "1 January 2001",
+        "warganegara": "Korea",
+        "role": "Lead Vocalist"
+      },
+      {
+        "image": "https://i.pinimg.com/564x/2e/79/d7/2e79d788c79baf9d12402e23d003f0ae.jpg",
+        "nama": "Ning Yi Zhuo",
+        "username": "Ning Ning",
+        "email": "ningning@aespa.com",
+        "kelahiran": "23 Oktober 2002",
+        "warganegara": "Korea",
+        "role": "Main Vocalist"
+      }
+    ],
+    "album": [
+      {
+        "title": "My World",
+        "release": "2023",
+        "song": ["Welcome To MY WORLD", "Spicy", "Thirsty", "Salty & Sweet"]
+      },
+      {
+        "title": "Girls",
+        "release": "2022",
+        "song": ["Girls", "Illusion", "Life's Too Short", "ICU"]
+      },
+      {
+        "title": "Savage",
+        "release": "2021",
+        "song": ["Savage", "Lucid Dream", "aenergy", "ICONIC"]
+      }
+    ]
+  },
+  {
+    "id": "10ADJ03",
+    "name": "Lee Sserafim",
+    "country": "South Korean",
+    "lable": " Woollim Entertainment",
+    "fandom": "FEARNOT",
+    "debut": {
+      "year": "2022",
+      "date": "2 Mei",
+      "song": "Fearless"
+    },
+    "member": [
+      {
+        "image": "https://i.pinimg.com/564x/da/ce/34/dace341a692757b600ed12ccc344df08.jpg",
+        "nama": "Kim Chae-won",
+        "username": "Chaewon",
+        "email": "chaewon@leessrafim.com",
+        "kelahiran": "1 Agustus 2000",
+        "warganegara": "Korea",
+        "role": "Main Vocalist"
+      },
+      {
+        "image": "https://i.pinimg.com/564x/ad/51/cd/ad51cd0ee5248211570341a2de802edf.jpg",
+        "nama": "Sakura Miyawaki",
+        "username": "Sakura",
+        "email": "sakura@leessrafim.com",
+        "kelahiran": "19 Maret 1998",
+        "warganegara": "Jepang",
+        "role": "Lead Dancer"
+      },
+      {
+        "image": "https://i.pinimg.com/564x/17/18/e5/1718e5283dfa702e72de2c717fdd8d5b.jpg",
+        "nama": "Heo Yun-jin",
+        "username": "Yunjin",
+        "email": "yunjin@leessrafim.com",
+        "kelahiran": "8 Oktober 2001",
+        "warganegara": "Amerika",
+        "role": "Lead Vocalist"
+      },
+      {
+        "image": "https://i.pinimg.com/564x/28/8e/38/288e38412f1e434910a20b875f4121df.jpg",
+        "nama": "Kazuha Nakamura",
+        "username": "Kazuha",
+        "email": "kazuha@leessrafim.com",
+        "kelahiran": "9 Agustus 2003",
+        "warganegara": "Jepang",
+        "role": "Lead Rapper"
+      },
+      {
+        "image": "https://i.pinimg.com/564x/ed/3d/ae/ed3dae28107319c4b530b7fd4e0dc095.jpg",
+        "nama": "Hong Eun-Chae",
+        "username": "Eunchae",
+        "email": "Eunchae@leessrafim.com",
+        "kelahiran": "10 November 2006",
+        "warganegara": "Korea",
+        "role": "Main Dancer"
+      }
+    ],
+    "album": [
+      {
+        "title": "Fearless",
+        "release": "2022",
+        "song": ["FEARKESS", "Sour Grapes", "Blue Flame"]
+      },
+      {
+        "title": "Antifragile",
+        "release": "2022",
+        "song": ["ANTIFRAGILE", "The Hydra", "Good Parts", "No Celestial"]
+      },
+      {
+        "title": "Unforgiven",
+        "release": "2023",
+        "song": [
+          "UNFORGIVEN",
+          "Flash Forward",
+          "eve, psyche & the bluebeard’s wife",
+          "burn the bridge"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10ADJ04",
+    "name": "NewJeans ",
+    "country": "South Korean",
+    "lable": "ADOR",
+    "fandom": "Bunnies",
+    "debut": {
+      "year": "2022",
+      "date": "22 July",
+      "song": "Attention"
+    },
+    "member": [
+      {
+        "image": "https://i.pinimg.com/564x/78/5d/1a/785d1a3b0859faa450fbc1dc331ae938.jpg",
+        "nama": "Phạm Ngọc Hân",
+        "username": "Hanni",
+        "email": "hanni @newjeans.com",
+        "kelahiran": "6 Oktober 2004",
+        "warganegara": "Australia, Vietnam",
+        "role": "Vocalist"
+      },
+      {
+        "image": "https://i.pinimg.com/564x/b4/c0/eb/b4c0eba6a1b64db611b5527cfbac0411.jpg",
+        "nama": "Kang Hae-rin",
+        "username": "Haerin",
+        "email": "haerin@newjeans.com",
+        "kelahiran": "15 Mei 2006",
+        "warganegara": "Korea",
+        "role": "Dancer"
+      },
+      {
+        "image": "https://i.pinimg.com/564x/43/47/8a/43478a9aa77f85b4c7b77855abffdc06.jpg",
+        "nama": "Kim Minji",
+        "username": "Minji",
+        "email": "minji@newjeans.com",
+        "kelahiran": "7 Mei 2004",
+        "warganegara": "Korea ",
+        "role": "Rapper"
+      },
+      {
+        "image": "https://i.pinimg.com/564x/39/db/00/39db001509782f0eb378aecf215a5d3c.jpg",
+        "nama": "Mo Ji-hye",
+        "username": "Danielle",
+        "email": "danielle@newjeans.com",
+        "kelahiran": "11 April 2005 ",
+        "warganegara": "Korea",
+        "role": "Vocalist"
+      },
+      {
+        "image": "https://i.pinimg.com/564x/3b/10/54/3b10549ea822ec3e9571b81aec829e3b.jpg",
+        "nama": "Lee Hye-in",
+        "username": "Hyein",
+        "email": "hyein@newjeans.com",
+        "kelahiran": "21 April 2008",
+        "warganegara": "Korea",
+        "role": "Dancer"
+      }
+    ],
+    "album": [
+      {
+        "title": "New Jeans",
+        "release": "2022",
+        "song": ["Cookie", "Attention", "Hype Boy", "Hurt"]
+      },
+      {
+        "title": "Get Up",
+        "release": "2023",
+        "song": ["Super Shy", "Get Up", "ASAP", "ETA"]
+      }
+    ]
+  }
+]

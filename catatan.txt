@@ -1,0 +1,28 @@
+// Soal PseudoCode
+    Jalankan melalui node.js
+    dengan perintah "node {nama file}"
+    bisa juga menjalan dengan nodemon jika sudah terinstal secara global
+    dengan perintah "nodemon {nama file}"
+
+// Soal Utama
+    Untuk membuka file html jalankan melalui live server.
+    Kalo membuka file tanpa live server fetch tidak bisa jalan.
+
+    Soal No.7
+    Saya gabisa untuk menjawab soal itu
+
+    Soal No.8
+    Keterangan ERROR
+    1. Line 23 = kurang tanda koma (.)
+    2. Line 429 = kurang tanda petik dua ("") 
+    3. Line 438 =  datanya kosong
+    4. Line 541 = kurang index (i)
+    5. Line 538 = attributes diganti dengan attribute
+
+    Tambahan
+    1. Line 542 = console.log di comment
+    2. Line 543 = console.log di comment 
+
+    Soal No.10 - 11
+    pastikan node_module terlah terinstal
+    digabung jadi 1 file namun beda path untuk pemanggilannya

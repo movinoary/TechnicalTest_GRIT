@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      box-sizing: border-box;
+      margin: 0;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+    section {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    form,
+    figure {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      border-radius: 10px;
+      border: 2px solid #000;
+      padding: 1rem 3rem;
+    }
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+    figure h2 {
+      font-size: 2.5rem;
+      font-weight: 500;
+    }
+    button {
+      padding: 5px 20px;
+      font-size: 1rem;
+      border: none;
+      background-color: #000;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input {
+      padding: 3px 5px;
+      font-size: 1rem;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid #000;
+    }
+  </style>
+  <body>
+    <section id="root"></section>
+  </body>
+  <script>
+    let render = document.getElementById("root");
+    let user = localStorage.getItem("login");
+    user = JSON.parse(user);
+    let condition = user?.condition || false;
+    let content;
+
+    function loginUser() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      let body = {
+        username,
+        password,
+        condition: true,
+      };
+
+      body = JSON.stringify(body);
+
+      if (username != "" && password != "") {
+        const href = window.location.href.split("index.html")[0];
+
+        condition = true;
+
+        localStorage.setItem("login", body);
+        window.location.reload("Refresh");
+      } else {
+        alert("Masukan username dan password");
+      }
+    }
+
+    function logout() {
+      const href = window.location.href.split("welcome.html")[0];
+
+      condition = false;
+
+      localStorage.removeItem("login");
+      window.location.reload("Refresh");
+    }
+
+    if (!condition) {
+      content = `
+      <form>
+      <h1>LOGIN</h1>
+      <div>
+        <label>Username</label>
+        <input type="text" id="username" placeholder="admin" />
+      </div>
+      <div>
+        <label>Password</label>
+        <input type="password" id="password" placeholder="*****"/>
+      </div>
+      <button type="button" onclick=loginUser()>Login</button>
+    </form>
+      `;
+    } else {
+      content = `
+        <figure>
+            <h1>Selamat Datang</h1>
+            <h2>${user.username}</h2>
+            <button onclick="logout()">Logout</button>
+        </figure>
+    `;
+    }
+
+    render.innerHTML += `${content}`;
+  </script>
+</html>

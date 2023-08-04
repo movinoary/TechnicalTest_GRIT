@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabel</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+    h1 {
+      text-align: center;
+    }
+    body {
+      padding: 5% 10%;
+    }
+    table {
+      margin-top: 3rem;
+      width: 100%;
+      color: #3f2305;
+      border-collapse: collapse;
+    }
+    thead {
+      background-color: #dfd7bf;
+      text-transform: capitalize;
+    }
+    th {
+      font-size: 1.3em;
+      padding: 10px;
+    }
+    td {
+      text-align: center;
+    }
+    tbody > tr:nth-of-type(odd) {
+      background-color: #f2ead3;
+    }
+    tbody > tr:nth-of-type(even) {
+      background-color: #f5f5f5;
+    }
+    img {
+      width: 50px;
+    }
+    button {
+      background-color: #ff0000;
+      border: none;
+      padding: 5px 10px;
+      color: #fff;
+    }
+  </style>
+  <body>
+    <h1>Tabel Clothes</h1>
+    <button onclick="refreshData()">Refresh Data</button>
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Id User</th>
+          <th>Title</th>
+          <th>Desc</th>
+          <th>Desc</th>
+        </tr>
+      </thead>
+      <tbody id="data"></tbody>
+    </table>
+  </body>
+  <script>
+    let dataDelete = localStorage.getItem("dataDelete");
+    dataDelete = JSON.parse(dataDelete);
+    dataDelete = dataDelete || [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    function deleteData(id) {
+      let body = dataDelete.filter((d) => d !== id);
+      body = JSON.stringify(body);
+      localStorage.setItem("dataDelete", body);
+      window.location.reload("Refresh");
+    }
+
+    function refreshData() {
+      localStorage.removeItem("dataDelete");
+      window.location.reload("Refresh");
+    }
+
+    const reqAPI = async () => {
+      const response = await fetch("http://jsonplaceholder.typicode.com/posts");
+      let data = await response.json();
+      data = data.slice(0, 10);
+
+      showData(data);
+    };
+
+    const showData = (data) => {
+      let render = document.getElementById("data");
+
+      const dataFilter = dataDelete
+        .map((d) => data.filter((f) => f.id == d))
+        .map((d) => d[0]);
+
+      for (let i = 0; i < dataDelete.length; i++) {
+        render.innerHTML += `
+        <tr>
+            <td>${dataFilter[i].id}</td>
+            <td>${dataFilter[i].userId}</td>
+            <td>${dataFilter[i].title}</td>
+            <td>${dataFilter[i].body}</td>
+            <td><button onClick=deleteData(${dataFilter[i].id})>Delete</button></td>
+        </tr>
+        `;
+      }
+    };
+
+    reqAPI();
+  </script>
+</html>
